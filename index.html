@@ -13,15 +13,22 @@
     <nav>
         <div class="row">
             <div class="col gap-2 d-sm-flex" id="newArray">
-                <button type="button" class="btn btn-outline-info">New Array</button>
+                <button type="button" class="btn btn-light newArray">New Array</button>
             </div>
-            
+            <div class="col" id="input">
+                <span id="size">Bars
+                    <input id="arr_sz" type="range" min="9" max="80" step=1 value=25>
+                </span>
+                <span id="speed">Speed
+                    <input id="speed_input" type="range" min="20" max="320" stepDown=10 value=150>
+                </span>
+            </div>
             <div class="col gap-2 d-sm-flex justify-content-end">
-                <button type="button" class="btn btn-outline-primary btn-dark bubbleSort">Bubble Sort</button>
-                <button type="button" class="btn btn-outline-primary btn-dark selectionSort">Selection Sort</button>
-                <button type="button" class="btn btn-outline-primary btn-dark insertionSort">Insertion Sort</button>
-                <button type="button" class="btn btn-outline-primary btn-dark quickSort">Quick Sort</button>
-                <button type="button" class="btn btn-outline-primary btn-dark mergeSort">Merge Sort</button>
+                <button type="button" class="btn btn-warning bubbleSort">Bubble Sort</button>
+                <button type="button" class="btn btn-warning selectionSort">Selection Sort</button>
+                <button type="button" class="btn btn-warning insertionSort">Insertion Sort</button>
+                <button type="button" class="btn btn-warning quickSort">Quick Sort</button>
+                <button type="button" class="btn btn-warning mergeSort">Merge Sort</button>
             </div>
         </div>
     </nav>
@@ -31,8 +38,10 @@
     <div id="bars" class="flex-container"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="js/sorting.js"></script>
     <script src="js/bubble.js"></script>
-    <!-- <script src="js/sorting.js"></script> -->
+    <script src="js/insertion.js"></script>
+    <script src="js/selection.js"></script>
 
 </body>
 </html>
